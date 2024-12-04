@@ -1,13 +1,30 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+# no local env file
+.env
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # dependencies
 node_modules/
+
+# ios / android
+/ios
+/android
 
 # Expo
 .expo/
 dist/
 web-build/
-expo-env.d.ts
+
+# builds
+*.ipa
+*.apk
 
 # Native
 *.orig.*
@@ -34,3 +51,44 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+.env.local
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+.idea
+
+expo-env.d.ts
+# @end expo-cli
