@@ -1,4 +1,11 @@
-# react-native-matrix-sdk and Expo test
+# react-native-matrix-sdk React Native Expo test
+
+This is repository to test the `react-native-matrix-sdk` library within React Native Expo projects.
+
+The `react-native-matrix-sdk` library builds the matrix rust sdk ( https://github.com/matrix-org/matrix-rust-sdk ) natively for iOS and Android devices
+and provides bindings for React Native.
+
+See:
 
 https://github.com/unomed-dev/react-native-matrix-sdk
 
@@ -8,20 +15,14 @@ https://github.com/unomed-dev/react-native-matrix-sdk
 yarn install
 ````
 
-# Build iOS (works)
+# Build iOS
 
 ````sh
 npx expo run:ios
 ````
 
-# Build Android (works not)
+# Build Android
 
 ````sh
 npx expo run:android
-````
-Workaround
-
-````
-mkdir -p ./node_modules/@unomed/react-native-matrix-sdk/android/build/generated/source/codegen
-cp -r ./node_modules/@unomed/react-native-matrix-sdk/android/generated/jni ./node_modules/@unomed/react-native-matrix-sdk/android/build/generated/source/codegen
 ````
